@@ -1,6 +1,6 @@
 ####
 
-setwd("~/Desktop/BP")
+setwd("~/Desktop/BP") # set directory
 
 library(data.table)
 library(dplyr)
