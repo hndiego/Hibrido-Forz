@@ -1,6 +1,6 @@
 ####
 
-setwd("~/Desktop/BP")
+setwd("~/Desktop/BP") # set directory
 
 library(abind)
 library(data.table)
