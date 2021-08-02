@@ -1,0 +1,20 @@
+####
+
+cdo cat *.nc "era5_cp_1979-2020_cat.nc"
+cdo daysum -shifttime,-13hour "era5_cp_1979-2020_cat.nc" "era5_cp_1979-2020_day.nc"
+
+cdo cat *.nc "era5_lsp_1979-2020_cat.nc"
+cdo daysum -shifttime,-13hour "era5_lsp_1979-2020_cat.nc" "era5_lsp_1979-2020_day.nc"
+
+cdo cat *.nc "era5_t2m_1979-2020_cat.nc"
+cdo daymean -shifttime,-12hour "era5_t2m_1979-2020_cat.nc" "era5_t2m_1979-2020_day.nc"
+
+####
+
+## precip
+
+cdo daysum -shifttime,-13hour "era5_actual_precip_pre-cdo.nc" "era5_actual_precip_daily.nc"
+
+## temp
+
+cdo daymean -shifttime,-12hour "era5_actual_temp_pre-cdo.nc" "era5_actual_temp_daily.nc"
